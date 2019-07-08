@@ -1,0 +1,15 @@
+<h1> camp.ejs file </h1>
+
+<% for(i =0;i<movie.length;i++){ %>
+
+<img src = "<%=movie[i]["Poster"]%>  alt="movie_name" height = "240" width = "240" >
+
+<h5> <%= movie[i]["name"] %> </h5>
+	
+	<% } %>
+
+<center>
+<a href = "/campground/new" > click here to add new poster </a>
+</center>
+
+<br><br><br><br>

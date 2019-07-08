@@ -1,0 +1,14 @@
+{
+  "name": "intro_express",
+  "version": "1.0.0",
+  "description": "introtoexpress",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanmay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

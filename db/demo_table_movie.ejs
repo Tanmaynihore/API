@@ -1,0 +1,37 @@
+<h1> hey at the demo_table_movie.ejs side </h1> 
+
+  <br / >
+  <!-- in the table format -->
+
+<table>
+<tr>
+<th> <h3> <b> movie name  </b> </h3></th>
+
+&nbsp &nbsp
+<th> <h3> <b> imbdID  </b> </h3></th>
+<th> <h3> <b> Year  </b> </h3></th>
+<th> <h3> <b> Poster </b></h3> </th>
+<th> <h3>
+</tr>
+<h1> hell&nbspworld</h1>
+
+<% for(i =0;i<data["Search"].length;i++){ %>
+<tr>
+<td style = "color:cyan"> <%= data["Search"][i]["Title"] %>  </td> 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+<td style = "color:green"> <%= data["Search"][i]["imdbID"] %>  </td> 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp       	
+<td style = "color:red"> <%= data["Search"][i]["Year"] %>  </td>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<td> <a href = "<%=data["Search"][i]["Poster"]%>" >click to see the poster </a> </td>
+</tr>
+<% } %>
+
+
+
+<% for(i =0;i<data["Search"].length;i++){ %>
+<tr> </tr>
+<% } %>
+
+</table>
